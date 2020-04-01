@@ -1,11 +1,12 @@
 [package]
 name = "openvr"
-version = "0.6.0"
+version = "0.7.0"
 authors = [
     "Colin Sherratt",
     "Erick Tryzelaar",
     "Rene Eichhorn",
-    "Benjamin Saunders"
+    "Benjamin Saunders",
+    "Kevin Simpson"
 ]
 license = "MIT"
 
@@ -19,8 +20,8 @@ categories = [ "hardware-support", "api-bindings" ]
 
 [badges]
 travis-ci = { repository = "rust-openvr/rust-openvr" }
-maintenance = { status = "passively-maintained" }
+maintenance = { status = "maintained" }
 
 [dependencies]
-openvr_sys = "2.0.3"
+openvr_sys = { git = "https://github.com/dmitsuki/rust-openvr-sys.git" }
 lazy_static = "1.3.0"

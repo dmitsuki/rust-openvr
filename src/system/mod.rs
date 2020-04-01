@@ -3,7 +3,7 @@
 
 use std::ffi::CString;
 use std::marker::PhantomData;
-use std::{mem, ptr, slice};
+use std::{mem, ptr, slice, unimplemented};
 
 use openvr_sys as sys;
 
@@ -402,7 +402,8 @@ impl System {
     /// prompt the user to save and then exit afterward, otherwise the user will be left in a confusing state.
     pub fn acknowledge_quit_user_prompt(&self) {
         unsafe {
-            self.0.AcknowledgeQuit_UserPrompt.unwrap()();
+            unimplemented!(); 
+            //self.0.AcknowledgeQuit_UserPrompt.unwrap()();
         }
     }
 
